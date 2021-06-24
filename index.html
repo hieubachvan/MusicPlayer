@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="all">
+        <div class="app">
+            <div class="header">
+                <div class="header__block">
+                    <div class="musicControl">
+                        <div class="musicControl__icon">
+                            <!-- <i class="fa fa-chevron-down" aria-hidden="true"></i> -->
+                        </div>
+
+                        <div class="musicControl__nowplaying">
+                            <div class="musicControl__nowplaying__heading">
+                                Now Playing
+                            </div>
+                            <div class="musicControl__nowplaying__description">
+                                <h3>We don't talk any more</h3>
+                            </div>
+                        </div>
+
+                        <div class="musicControl__icon">
+                            <!-- <i class="fa fa-plus" aria-hidden="true"></i> -->
+                        </div>
+                    </div>
+
+                    <div class="song_img">
+                    </div>
+                    <div class="controlBar">
+                        <div class="controlBar__icon-repeat">
+                            <i class="fa fa-repeat" aria-hidden="true"></i>
+                        </div>
+                        <div class="controlBar__icon-backward">
+                            <i class="fa fa-step-backward" aria-hidden="true"></i>
+                        </div>
+                        <div class="controlBar__icon-playBtn">
+                            <i class="fa fa-play play" aria-hidden="true"></i>
+                            <i class="fa fa-pause pause" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="controlBar__icon-forward">
+                            <i class="fa fa-step-forward" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="controlBar__icon-random">
+                            <i class="fa fa-random" aria-hidden="true"></i>
+                        </div>
+
+
+                    </div>
+
+                    <div class="songRange">
+                        <input id="progress" class="songTime" type="range" value="0" step="0.5" min="0" max="100" />
+                    </div>
+                </div>
+            </div>
+            <div class="listSong">
+            </div>
+            <audio id="audio" src=""></audio>
+
+        </div>
+
+    </div>
+
+
+
+
+    <script src="./assets/css/main.js"></script>
+
+</body>
+
+</html>

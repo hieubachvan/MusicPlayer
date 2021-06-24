@@ -1,0 +1,237 @@
+* {
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+    /* max-width : 420px; */
+    margin: 0;
+
+}
+
+.all {
+    /* height: 736px; */
+    /* min-width: 414px; */
+    /* background-color: var(--primary-color); */
+    /* padding: 16px; */
+    /* position: relative; */
+    display: flex;
+}
+
+
+.app {
+    margin: auto;
+    position: relative;
+    /* background-color: var(--primary); */
+    /* padding: 20px; */
+}
+
+.musicControl {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 12px;
+    
+}
+
+.musicControl__nowplaying {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+
+
+.musicControl__nowplaying__heading {
+    color: rgb(170, 169, 169);
+    font-size: 0.9rem;
+    margin-top: 16px;
+
+}
+
+.musicControl__nowplaying__description h3 {
+    margin: 0px;
+    font-size: 1.4rem;
+}
+
+/* .blockImg {
+    width: 100%;
+    height: 300px;
+    display:flex;
+} */
+
+.song_img {
+    margin: 32px auto;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/we-dont-talk-anymore-gomez-puth.jpg);
+}
+
+
+.controlBar {
+    margin-bottom: 16px;
+    display:flex;
+    justify-content: space-between;
+    padding: 0px 64px;
+    align-items: center;
+}
+
+.controlBar__icon-playBtn {
+    width: 50px;
+    height: 50px;
+    display:flex;
+    /* background-color: #ed4d8b; */
+    box-shadow:1px 1px 5px rgb(170, 169, 169);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    /* padding-left: 4px; */
+
+    
+}
+
+
+
+.controlBar .pause {
+    display: none;
+}
+
+.controlBar__icon-playBtn.playing .pause {
+    display:inline-block;
+}
+
+.controlBar__icon-playBtn.playing .play {
+    display:none;
+}
+
+.controlBar .play {
+    display: inline-block;
+}
+
+
+
+.controlBar__icon-playBtn:hover {
+    background-color: #f5d3d0;
+}
+
+.controlBar__icon-playBtn-icon {
+    /* color: aliceblue; */
+    padding-left: 3px;
+    color: rgb(85, 84, 84);
+
+}
+
+.controlBar__icon-playBtn-icon {
+    margin:auto;
+}
+
+.songRange {
+    display:flex;
+}
+
+.songTime {
+    border-radius: 2px;
+    margin: auto;
+    width: 90%;
+    height: 6px;
+    background-color: rgb(170, 169, 169);
+}
+
+.header {
+    position:absolute;
+    /* width: 420px; */
+    /* height: 462px; */
+    /* margin: 16px auto; */
+    /* background-color: white; */
+    border-radius: 4px;
+    left: 0%;
+    top: 0;
+    z-index: 3;
+    background-color: var(--primary-color);
+}
+
+.header__block {
+    position: fixed;
+    width: 450px;
+    background-color: var(--primary-color);
+}
+
+
+
+
+
+.listSong {
+    padding-top: 450px;
+    margin:auto;
+    width: 450px;
+    display:flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+}
+
+.listSong__item {
+    display:flex;
+    /* background-color: white; */
+    width: 360px;
+    border-radius: 32px;
+    justify-content:space-around;
+    align-items: center;
+    padding: 12px 0px;
+    box-shadow:0px 0px 12px rgb(170, 169, 169);
+    cursor: pointer;
+    margin:auto;
+    
+}
+
+.listSong__item:hover {
+    background-color: #f7ced8;
+
+}
+
+.listSong__item-img {
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+
+
+.listSong__item-info {
+    min-width: 215px;
+}
+
+.listSong__item-info-header {
+    margin: 0px;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+
+.listSong__item-info-author {
+    font-size: .9rem;
+    opacity: 0.5;
+}
+
+.listSong__item-info-icon {
+    color:rgb(63, 47, 47)
+    /* font-size: 1.2rem;
+    font-weight: 750;
+    margin-bottom: 32px; */
+}
+
+.listSong__item {
+    margin-bottom: 16px;
+}
+
+.active {
+    background-color: #f3a8bb;
+    animation: activeIn 0.8s linear ;
+}
+
+.chosen {
+    color: #f53a69;
+}

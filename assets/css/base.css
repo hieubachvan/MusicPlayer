@@ -1,0 +1,16 @@
+:root {
+    --primary-color: #fcf1f0;
+    --rgba-color: rgba(75, 0, 130, 0.3);
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+}
+
+@keyframes activeIn {
+    from {
+        opacity: 0.5;
+    }
+    to { opacity: 1;
+    }
+}
+
